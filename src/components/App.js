@@ -5,12 +5,12 @@ import '../styles/App.css';
 const App = () => {
 //code here 
 const [color, setColor] = useState("redColor")
-const [count, setCount] = useState(0)
+const [flag, setFlag] = useState(false)
 
 
 const handleColor =()=> {
-  setCount(count + 1)
-  if(count %2 ==0 ){
+  setFlag(!flag)
+  if (flag === true) {
     setColor("blueColor");
   }else{
     setColor("redColor");
